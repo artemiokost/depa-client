@@ -1,0 +1,123 @@
+.canopy
+  z-index: 20
+  .content-image
+    max-height: 576px
+    overflow: hidden
+
+.canopy-home
+  z-index: 20
+  .container
+    padding: 0 1rem
+    max-width: 1552px
+  .left-edge,
+  .right-edge
+    .edge-content > .content-header
+      margin: 1rem 0 0
+  .left-edge
+    .edge-content
+      margin-left: 120px
+    &:not(:only-child)
+      max-width: 1080px
+  .right-edge
+    max-width: 440px
+    .edge-content
+      margin-right: 120px
+
+.canopy-profile
+  z-index: 20
+  .navbar
+    overflow: hidden
+    z-index: 2
+    .navbar-tab
+      align-items: center
+      border-bottom: 2px solid transparent
+      color: $grey-dark
+      display: flex
+      padding: 12px 12px 10px
+      &:hover
+        background-color: inherit
+        border-bottom-color: $blue
+      &.is-active
+        color: $blue
+        border-bottom-color: $blue
+    .navbar-end
+      display: flex !important
+      justify-content: flex-end
+      margin-left: auto
+    .navbar-start
+      display: flex !important
+      justify-content: flex-start
+      margin-right: auto
+    & > .container
+      display: flex !important
+      max-width: 1312px
+  &.narrow
+    .profile-card-group
+      top: 0
+    .profile-header
+      .avatar
+        top: -200px
+
+.config-button
+  align-items: center
+  color: $grey-dark
+  display: flex
+  flex: 0 0
+  justify-content: center
+  padding: 12px
+  transition: 0.2s ease
+  &:hover
+    color: $primary
+  &.is-active
+    transform: rotate(45deg)
+    color: $primary
+    &:hover
+      color: $grey-dark
+
+@media screen and (max-width: 370px)
+  .canopy-profile
+    .config-button
+      display: none
+
+@media screen and (max-width: 1280px)
+  .canopy-home
+    .container > .columns
+      flex-direction: column
+    .edge-content
+      margin: 0 !important
+    .left-edge
+      padding: 0 !important
+      &:not(:only-child)
+        max-width: 100%
+    .right-edge
+      max-width: 100%
+
++touch
+  .canopy-home
+    .content-list
+      border-left: solid 5px $border
+      margin-top: 1rem
+      padding-left: 1rem
+    .left-edge
+      .edge-content
+        margin-left: 0
+      & > .columns
+        flex-direction: column
+        & > .column:first-child
+          .content
+            margin-top: 0
+            .content-image
+              margin: 0 -1rem
+  .canopy-profile
+    .config-button
+      min-width: 4rem
+
++desktop
+  .canopy-profile
+    position: sticky
+    top: -32px
+  .canopy-home
+    .content-list
+      .bi-line-item,
+      .content-metadata
+        display: none

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /ads.txt
+Disallow: /pending
+Host: https://depa.io
+Sitemap: https://depa.io/sitemap.xml
+Crawl-delay: 4
