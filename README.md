@@ -4,7 +4,7 @@ Depa project client (React + Redux)
 
 ## About
 
-![alt text](https://s3.amazonaws.com/cdn.depa.io/images/gif/additional/WjxPJmulki.gif)
+![GIF UI](https://s3.amazonaws.com/cdn.depa.io/images/gif/additional/WjxPJmulki.gif)
 
 ## Startup
 
