@@ -1,4 +1,4 @@
-Depa project client (React + Redux)
+## Depa project client (React + Redux)
 
 ---
 
